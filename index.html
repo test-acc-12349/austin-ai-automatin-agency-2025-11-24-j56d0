@@ -1,0 +1,1142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Austin AI Automation Agency - AI-Powered Automation Solutions to Save Time, Boost Efficiency, and Cut Costs with Smart Workflows">
+    <meta name="keywords" content="AI Automation, Workflow Automation, Business Automation, Austin TX">
+    <meta name="author" content="Austin AI Automation Agency">
+    <title>Austin AI Automation Agency - Smart Workflow Solutions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .gradient-primary {
+            background: linear-gradient(135deg, #FF5A5F 0%, #FF8A8F 100%);
+        }
+
+        .gradient-dark {
+            background: linear-gradient(135deg, #1A1A1A 0%, #2D2D2D 100%);
+        }
+
+        .text-primary {
+            color: #FF5A5F;
+        }
+
+        .text-dark {
+            color: #1A1A1A;
+        }
+
+        .bg-primary {
+            background-color: #FF5A5F;
+        }
+
+        .bg-accent {
+            background-color: #FFD166;
+        }
+
+        .hover-lift {
+            transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .hover-lift:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(255, 90, 95, 0.2);
+        }
+
+        .feature-card {
+            transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .feature-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        .cta-button {
+            background-color: #FF5A5F;
+            transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .cta-button:hover {
+            background-color: #E84A4F;
+            transform: scale(1.05);
+            box-shadow: 0 10px 30px rgba(255, 90, 95, 0.3);
+        }
+
+        .secondary-button {
+            background-color: #FFD166;
+            color: #1A1A1A;
+            transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .secondary-button:hover {
+            background-color: #FFC94D;
+            transform: scale(1.05);
+            box-shadow: 0 10px 30px rgba(255, 209, 102, 0.3);
+        }
+
+        .testimonial-card {
+            transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        .faq-item {
+            border-bottom: 1px solid #E5E7EB;
+        }
+
+        .faq-question {
+            cursor: pointer;
+            transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+            user-select: none;
+        }
+
+        .faq-question:hover {
+            color: #FF5A5F;
+        }
+
+        .faq-icon {
+            transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .faq-answer {
+            transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .faq-answer.hidden {
+            display: none;
+        }
+
+        .star-rating {
+            color: #FFD166;
+        }
+
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            background: white;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        .mobile-menu {
+            transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .mobile-menu.hidden {
+            display: none;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animate-fade-in {
+            animation: fadeIn 0.6s ease-out;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-900">
+    <!-- Header Navigation -->
+    <header class="w-full">
+        <nav class="max-w-7xl mx-auto px-8 md:px-16 py-6 flex justify-between items-center">
+            <!-- Logo -->
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 bg-primary rounded-full flex items-center justify-center">
+                    <i class="fas fa-bolt text-white text-lg"></i>
+                </div>
+                <span class="text-xl md:text-2xl font-bold text-dark">AAA</span>
+            </div>
+
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex items-center gap-8">
+                <a href="#features" class="text-dark font-medium hover:text-primary transition-colors duration-300">Features</a>
+                <a href="#benefits" class="text-dark font-medium hover:text-primary transition-colors duration-300">Benefits</a>
+                <a href="#testimonials" class="text-dark font-medium hover:text-primary transition-colors duration-300">Testimonials</a>
+                <a href="#faq" class="text-dark font-medium hover:text-primary transition-colors duration-300">FAQ</a>
+                <a href="#about" class="text-dark font-medium hover:text-primary transition-colors duration-300">About</a>
+            </div>
+
+            <!-- Desktop CTA Button -->
+            <div class="hidden md:block">
+                <a href="https://aaa.com" class="cta-button text-white font-semibold px-8 py-3 rounded-full inline-block">
+                    Get Started
+                </a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button class="mobile-menu-button md:hidden text-dark text-2xl focus:outline-none focus:ring-2 focus:ring-primary rounded-lg p-2">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu hidden md:hidden bg-white border-t border-gray-200">
+            <div class="max-w-7xl mx-auto px-8 py-6 flex flex-col gap-4">
+                <a href="#features" class="text-dark font-medium hover:text-primary transition-colors duration-300 py-2">Features</a>
+                <a href="#benefits" class="text-dark font-medium hover:text-primary transition-colors duration-300 py-2">Benefits</a>
+                <a href="#testimonials" class="text-dark font-medium hover:text-primary transition-colors duration-300 py-2">Testimonials</a>
+                <a href="#faq" class="text-dark font-medium hover:text-primary transition-colors duration-300 py-2">FAQ</a>
+                <a href="#about" class="text-dark font-medium hover:text-primary transition-colors duration-300 py-2">About</a>
+                <a href="https://aaa.com" class="cta-button text-white font-semibold px-8 py-3 rounded-full inline-block text-center mt-4">
+                    Get Started
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative w-full py-32 md:py-40 overflow-hidden">
+        <!-- Background Pattern -->
+        <div class="absolute inset-0 opacity-5">
+            <div class="absolute top-0 right-0 w-96 h-96 bg-primary rounded-full blur-3xl"></div>
+            <div class="absolute bottom-0 left-0 w-96 h-96 bg-accent rounded-full blur-3xl"></div>
+        </div>
+
+        <div class="relative max-w-7xl mx-auto px-8 md:px-16">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-16 items-center">
+                <!-- Left Content -->
+                <div class="animate-fade-in">
+                    <h1 class="text-5xl md:text-6xl lg:text-7xl font-bold text-dark leading-tight tracking-tight mb-6">
+                        Austin AI <span class="text-primary">Automation</span> Agency
+                    </h1>
+                    <p class="text-xl md:text-2xl text-gray-600 font-medium mb-8 leading-relaxed">
+                        Transform your business with intelligent automation powered by cutting-edge AI technology. Streamline workflows, eliminate manual tasks, and unlock unprecedented efficiency.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="https://aaa.com" class="cta-button text-white font-bold px-8 py-4 rounded-full text-center text-lg hover-lift">
+                            Start Your Automation Journey
+                        </a>
+                        <button class="border-2 border-primary text-primary font-bold px-8 py-4 rounded-full text-lg hover:bg-primary hover:text-white transition-all duration-300">
+                            <i class="fas fa-play mr-2"></i> Watch Demo
+                        </button>
+                    </div>
+                    <div class="flex flex-col sm:flex-row gap-8 mt-12">
+                        <div>
+                            <p class="text-3xl font-bold text-primary">500+</p>
+                            <p class="text-gray-600 font-medium">Businesses Automated</p>
+                        </div>
+                        <div>
+                            <p class="text-3xl font-bold text-primary">10M+</p>
+                            <p class="text-gray-600 font-medium">Hours Saved Annually</p>
+                        </div>
+                        <div>
+                            <p class="text-3xl font-bold text-primary">99.9%</p>
+                            <p class="text-gray-600 font-medium">Uptime Guarantee</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Visual -->
+                <div class="relative h-96 md:h-full min-h-96">
+                    <div class="absolute inset-0 bg-gradient-to-br from-primary to-accent rounded-3xl opacity-10"></div>
+                    <div class="absolute inset-0 flex items-center justify-center">
+                        <div class="w-full h-full bg-gradient-to-br from-primary/10 to-accent/10 rounded-3xl flex items-center justify-center backdrop-blur-sm">
+                            <div class="text-center">
+                                <div class="w-24 h-24 bg-primary rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
+                                    <i class="fas fa-cogs text-white text-4xl"></i>
+                                </div>
+                                <p class="text-xl font-bold text-dark">AI-Powered Automation</p>
+                                <p class="text-gray-600 mt-2">Enterprise-Grade Solutions</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="w-full py-20 md:py-32 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-8 md:px-16">
+            <div class="text-center mb-16 md:mb-20">
+                <h2 class="text-4xl md:text-5xl font-bold text-dark mb-6 tracking-tight">
+                    Powerful AI-Powered Features
+                </h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto font-medium">
+                    Discover the comprehensive suite of automation tools designed to revolutionize your business operations
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12">
+                <!-- Feature 1 -->
+                <div class="feature-card bg-white p-8 md:p-10 rounded-2xl shadow-md hover-lift">
+                    <div class="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-dark mb-4">Intelligent Workflow Automation</h3>
+                    <p class="text-gray-600 font-medium leading-relaxed mb-4">
+                        Automate complex business processes with AI-driven workflows that learn and adapt to your unique operational needs. Our intelligent systems handle repetitive tasks 24/7, freeing your team to focus on strategic initiatives.
+                    </p>
+                    <ul class="space-y-3">
+                        <li class="flex items-center gap-3">
+                            <i class="fas fa-check text-primary font-bold"></i>
+                            <span class="text-gray-600">Multi-step process automation</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fas fa-check text-primary font-bold"></i>
+                            <span class="text-gray-600">Real-time monitoring and alerts</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fas fa-check text-primary font-bold"></i>
+                            <span class="text-gray-600">Conditional logic and branching</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="feature-card bg-white p-8 md:p-10 rounded-2xl shadow-md hover-lift">
+                    <div class="w-16 h-16 bg-accent/20 rounded-2xl flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-dark mb-4">Advanced Analytics & Insights</h3>
+                    <p class="text-gray-600 font-medium leading-relaxed mb-4">
+                        Gain deep visibility into your automation performance with comprehensive analytics dashboards. Track metrics, identify bottlenecks, and optimize workflows with data-driven insights powered by machine learning algorithms.
+                    </p>
+                    <ul class="space-y-3">
+                        <li class="flex items-center gap-3">
+                            <i class="fas fa-check text-primary font-bold"></i>
+                            <span class="text-gray-600">Real-time performance metrics</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fas fa-check text-primary font-bold"></i>
+                            <span class="text-gray-600">Predictive analytics</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fas fa-check text-primary font-bold"></i>
+                            <span class="text-gray-600">Custom report generation</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="feature-card bg-white p-8 md:p-10 rounded-2xl shadow-md hover-lift">
+                    <div class="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-dark mb-4">Enterprise Security & Compliance</h3>
+                    <p class="text-gray-600 font-medium leading-relaxed mb-4">
+                        Rest assured with bank-level security and full compliance with industry standards. Our platform implements end-to-end encryption, role-based access controls, and comprehensive audit trails for complete peace of mind.
+                    </p>
+                    <ul class="space-y-3">
+                        <li class="flex items-center gap-3">
+                            <i class="fas fa-check text-primary font-bold"></i>
+                            <span class="text-gray-600">End-to-end encryption</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fas fa-check text-primary font-bold"></i>
+                            <span class="text-gray-600">GDPR & HIPAA compliant</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fas fa-check text-primary font-bold"></i>
+                            <span class="text-gray-600">Complete audit logs</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Feature 4 -->
+                <div class="feature-card bg-white p-8 md:p-10 rounded-2xl shadow-md hover-lift">
+                    <div class="w-16 h-16 bg-accent/20 rounded-2xl flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.658 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-dark mb-4">Seamless Integration Ecosystem</h3>
+                    <p class="text-gray-600 font-medium leading-relaxed mb-4">
+                        Connect with 1000+ applications and services seamlessly. Our extensive integration library and open API allow you to build custom connections and create unified automation workflows across your entire tech stack.
+                    </p>
+                    <ul class="space-y-3">
+                        <li class="flex items-center gap-3">
+                            <i class="fas fa-check text-primary font-bold"></i>
+                            <span class="text-gray-600">1000+ pre-built integrations</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fas fa-check text-primary font-bold"></i>
+                            <span class="text-gray-600">Custom API development</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fas fa-check text-primary font-bold"></i>
+                            <span class="text-gray-600">Webhook support</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Feature 5 -->
+                <div class="feature-card bg-white p-8 md:p-10 rounded-2xl shadow-md hover-lift">
+                    <div class="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-dark mb-4">AI-Powered Process Optimization</h3>
+                    <p class="text-gray-600 font-medium leading-relaxed mb-4">
+                        Leverage machine learning to continuously optimize your workflows. Our AI analyzes patterns, identifies inefficiencies, and recommends improvements automatically, ensuring your processes evolve with your business needs.
+                    </p>
+                    <ul class="space-y-3">
+                        <li class="flex items-center gap-3">
+                            <i class="fas fa-check text-primary font-bold"></i>
+                            <span class="text-gray-600">Continuous optimization</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fas fa-check text-primary font-bold"></i>
+                            <span class="text-gray-600">Pattern recognition</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fas fa-check text-primary font-bold"></i>
+                            <span class="text-gray-600">Automated recommendations</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Feature 6 -->
+                <div class="feature-card bg-white p-8 md:p-10 rounded-2xl shadow-md hover-lift">
+                    <div class="w-16 h-16 bg-accent/20 rounded-2xl flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-dark mb-4">Dedicated Support & Training</h3>
+                    <p class="text-gray-600 font-medium leading-relaxed mb-4">
+                        Get expert assistance every step of the way. Our dedicated support team provides 24/7 assistance, comprehensive training programs, and regular optimization consultations to maximize your ROI and platform adoption.
+                    </p>
+                    <ul class="space-y-3">
+                        <li class="flex items-center gap-3">
+                            <i class="fas fa-check text-primary font-bold"></i>
+                            <span class="text-gray-600">24/7 expert support</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fas fa-check text-primary font-bold"></i>
+                            <span class="text-gray-600">Comprehensive training</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fas fa-check text-primary font-bold"></i>
+                            <span class="text-gray-600">Regular consultations</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits" class="w-full py-20 md:py-32">
+        <div class="max-w-7xl mx-auto px-8 md:px-16">
+            <div class="text-center mb-16 md:mb-20">
+                <h2 class="text-4xl md:text-5xl font-bold text-dark mb-6 tracking-tight">
+                    Transform Your Business Operations
+                </h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto font-medium">
+                    Experience tangible results with our proven automation solutions
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16">
+                <!-- Benefit 1: Save Time -->
+                <div class="flex gap-8">
+                    <div class="flex-shrink-0">
+                        <div class="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center">
+                            <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold text-dark mb-4">Save Valuable Time</h3>
+                        <p class="text-gray-600 font-medium leading-relaxed mb-6">
+                            Eliminate hours of manual work every week. Our automation handles repetitive tasks instantly, allowing your team to focus on high-value activities that drive business growth. On average, clients report saving 30-40 hours per employee per month.
+                        </p>
+                        <ul class="space-y-3">
+                            <li class="flex items-center gap-3">
+                                <i class="fas fa-arrow-right text-primary font-bold"></i>
+                                <span class="text-gray-700">Instant task execution 24/7</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <i class="fas fa-arrow-right text-primary font-bold"></i>
+                                <span class="text-gray-700">Eliminate manual data entry</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <i class="fas fa-arrow-right text-primary font-bold"></i>
+                                <span class="text-gray-700">Reduce processing delays</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <i class="fas fa-arrow-right text-primary font-bold"></i>
+                                <span class="text-gray-700">Accelerate project timelines</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Benefit 2: Boost Efficiency -->
+                <div class="flex gap-8">
+                    <div class="flex-shrink-0">
+                        <div class="w-16 h-16 bg-accent/20 rounded-2xl flex items-center justify-center">
+                            <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold text-dark mb-4">Boost Operational Efficiency</h3>
+                        <p class="text-gray-600 font-medium leading-relaxed mb-6">
+                            Streamline workflows and eliminate bottlenecks with intelligent automation. Increase throughput, reduce errors, and improve overall productivity across your entire organization. Our clients achieve 50%+ efficiency gains within the first quarter.
+                        </p>
+                        <ul class="space-y-3">
+                            <li class="flex items-center gap-3">
+                                <i class="fas fa-arrow-right text-primary font-bold"></i>
+                                <span class="text-gray-700">Reduce human error by 95%</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <i class="fas fa-arrow-right text-primary font-bold"></i>
+                                <span class="text-gray-700">Increase process throughput</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <i class="fas fa-arrow-right text-primary font-bold"></i>
+                                <span class="text-gray-700">Improve quality consistency</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <i class="fas fa-arrow-right text-primary font-bold"></i>
+                                <span class="text-gray-700">Scale without adding headcount</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Benefit 3: Cut Costs -->
+                <div class="flex gap-8">
+                    <div class="flex-shrink-0">
+                        <div class="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center">
+                            <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold text-dark mb-4">Cut Operational Costs</h3>
+                        <p class="text-gray-600 font-medium leading-relaxed mb-6">
+                            Reduce labor costs and operational expenses dramatically. Automation eliminates the need for additional headcount while improving output quality. Most clients achieve ROI within 3-6 months of implementation.
+                        </p>
+                        <ul class="space-y-3">
+                            <li class="flex items-center gap-3">
+                                <i class="fas fa-arrow-right text-primary font-bold"></i>
+                                <span class="text-gray-700">Reduce labor costs by 40-60%</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <i class="fas fa-arrow-right text-primary font-bold"></i>
+                                <span class="text-gray-700">Minimize operational overhead</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <i class="fas fa-arrow-right text-primary font-bold"></i>
+                                <span class="text-gray-700">Decrease error-related costs</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <i class="fas fa-arrow-right text-primary font-bold"></i>
+                                <span class="text-gray-700">Quick ROI (3-6 months)</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Benefit 4: Smart Workflows -->
+                <div class="flex gap-8">
+                    <div class="flex-shrink-0">
+                        <div class="w-16 h-16 bg-accent/20 rounded-2xl flex items-center justify-center">
+                            <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 12 14.5 13.5h.5a3.5 3.5 0 017 0v.5"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold text-dark mb-4">Intelligent Workflow Management</h3>
+                        <p class="text-gray-600 font-medium leading-relaxed mb-6">
+                            Deploy sophisticated workflows that adapt to your business logic. Our smart automation platform learns from your processes and continuously improves execution, ensuring optimal performance and adapting to changing requirements.
+                        </p>
+                        <ul class="space-y-3">
+                            <li class="flex items-center gap-3">
+                                <i class="fas fa-arrow-right text-primary font-bold"></i>
+                                <span class="text-gray-700">Conditional logic and branching</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <i class="fas fa-arrow-right text-primary font-bold"></i>
+                                <span class="text-gray-700">Real-time workflow monitoring</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <i class="fas fa-arrow-right text-primary font-bold"></i>
+                                <span class="text-gray-700">Automatic error handling</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <i class="fas fa-arrow-right text-primary font-bold"></i>
+                                <span class="text-gray-700">Continuous improvement</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="w-full py-20 md:py-32 relative overflow-hidden">
+        <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200&h=600&fit=crop'); opacity: 0.15;"></div>
+        <div class="absolute inset-0 bg-gradient-to-r from-primary to-primary/80"></div>
+
+        <div class="relative max-w-4xl mx-auto px-8 md:px-16 text-center">
+            <h2 class="text-4xl md:text-5xl font-bold text-white mb-6 tracking-tight">
+                Ready to Transform Your Business?
+            </h2>
+            <p class="text-xl text-white/90 font-medium mb-10 leading-relaxed">
+                Join hundreds of successful businesses that have revolutionized their operations with AI-powered automation. Get started today and see the difference intelligent automation can make.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="https://aaa.com" class="bg-white text-primary font-bold px-8 py-4 rounded-full text-lg hover:shadow-xl hover:scale-105 transition-all duration-300 inline-block">
+                    <i class="fas fa-rocket mr-2"></i> Start Free Trial
+                </a>
+                <button class="border-2 border-white text-white font-bold px-8 py-4 rounded-full text-lg hover:bg-white hover:text-primary transition-all duration-300">
+                    <i class="fas fa-phone mr-2"></i> Schedule Demo
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="w-full py-20 md:py-32 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-8 md:px-16">
+            <div class="text-center mb-16 md:mb-20">
+                <h2 class="text-4xl md:text-5xl font-bold text-dark mb-6 tracking-tight">
+                    Trusted by Industry Leaders
+                </h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto font-medium">
+                    See what our clients have to say about their transformation journey
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card bg-white p-8 rounded-2xl shadow-md">
+                    <div class="flex items-center gap-1 mb-4">
+                        <i class="fas fa-star star-rating text-lg"></i>
+                        <i class="fas fa-star star-rating text-lg"></i>
+                        <i class="fas fa-star star-rating text-lg"></i>
+                        <i class="fas fa-star star-rating text-lg"></i>
+                        <i class="fas fa-star star-rating text-lg"></i>
+                    </div>
+                    <p class="text-gray-700 font-medium leading-relaxed mb-6">
+                        "Austin AI Automation completely transformed our data processing workflows. We've cut processing time by 75% and eliminated manual errors entirely. The ROI was immediate and undeniable."
+                    </p>
+                    <div class="border-t pt-4">
+                        <p class="font-bold text-dark">Sarah Mitchell</p>
+                        <p class="text-sm text-gray-600">Operations Director, Tech Solutions Inc.</p>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card bg-white p-8 rounded-2xl shadow-md">
+                    <div class="flex items-center gap-1 mb-4">
+                        <i class="fas fa-star star-rating text-lg"></i>
+                        <i class="fas fa-star star-rating text-lg"></i>
+                        <i class="fas fa-star star-rating text-lg"></i>
+                        <i class="fas fa-star star-rating text-lg"></i>
+                        <i class="fas fa-star star-rating text-lg"></i>
+                    </div>
+                    <p class="text-gray-700 font-medium leading-relaxed mb-6">
+                        "The implementation was seamless and the support team was exceptional. Within two months, we freed up 10 full-time employees to work on strategic projects. This is a game-changer for our organization."
+                    </p>
+                    <div class="border-t pt-4">
+                        <p class="font-bold text-dark">Marcus Johnson</p>
+                        <p class="text-sm text-gray-600">CEO, Financial Services Group</p>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card bg-white p-8 rounded-2xl shadow-md">
+                    <div class="flex items-center gap-1 mb-4">
+                        <i class="fas fa-star star-rating text-lg"></i>
+                        <i class="fas fa-star star-rating text-lg"></i>
+                        <i class="fas fa-star star-rating text-lg"></i>
+                        <i class="fas fa-star star-rating text-lg"></i>
+                        <i class="fas fa-star star-rating text-lg"></i>
+                    </div>
+                    <p class="text-gray-700 font-medium leading-relaxed mb-6">
+                        "Incredible platform with outstanding customer support. Our automation workflows are now handling 10,000+ daily transactions without any manual intervention. Couldn't imagine going back."
+                    </p>
+                    <div class="border-t pt-4">
+                        <p class="font-bold text-dark">Jennifer Chen</p>
+                        <p class="text-sm text-gray-600">Process Manager, Logistics Corp</p>
+                    </div>
+                </div>
+
+                <!-- Testimonial 4 -->
+                <div class="testimonial-card bg-white p-8 rounded-2xl shadow-md">
+                    <div class="flex items-center gap-1 mb-4">
+                        <i class="fas fa-star star-rating text-lg"></i>
+                        <i class="fas fa-star star-rating text-lg"></i>
+                        <i class="fas fa-star star-rating text-lg"></i>
+                        <i class="fas fa-star star-rating text-lg"></i>
+                        <i class="fas fa-star star-rating text-lg"></i>
+                    </div>
+                    <p class="text-gray-700 font-medium leading-relaxed mb-6">
+                        "We've achieved a 60% reduction in operational costs while improving service quality. The AI-powered optimization continuously improves our workflows. Highly recommended for any growing business."
+                    </p>
+                    <div class="border-t pt-4">
+                        <p class="font-bold text-dark">David Rodriguez</p>
+                        <p class="text-sm text-gray-600">VP Operations, Healthcare Solutions</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="w-full py-20 md:py-32">
+        <div class="max-w-4xl mx-auto px-8 md:px-16">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl md:text-5xl font-bold text-dark mb-6 tracking-tight">
+                    About Austin AI Automation Agency
+                </h2>
+            </div>
+
+            <div class="space-y-8">
+                <p class="text-lg text-gray-700 font-medium leading-relaxed">
+                    Founded in 2019, Austin AI Automation Agency emerged from a simple vision: to democratize enterprise-grade automation technology and make it accessible to businesses of all sizes. Our team of AI experts, automation engineers, and business consultants recognized a critical gap in the market—while large enterprises had access to sophisticated automation solutions, small and mid-sized businesses were left struggling with manual processes and outdated workflows. We set out to change that, building a platform that combines cutting-edge artificial intelligence with intuitive design, making powerful automation accessible to everyone.
+                </p>
+
+                <p class="text-lg text-gray-700 font-medium leading-relaxed">
+                    Today, we're proud to serve over 500 businesses across diverse industries, from healthcare and finance to manufacturing and e-commerce. Our mission is simple but powerful: to free human potential by automating the mundane. We believe that every organization deserves access to world-class automation technology that drives efficiency, reduces costs, and enables teams to focus on what truly matters. Through continuous innovation, unwavering commitment to customer success, and a deep understanding of real-world business challenges, we're building the future of work—one automated workflow at a time. Our core values of innovation, reliability, and customer-centricity guide everything we do, ensuring that our clients don't just adopt automation, but truly transform their operations for lasting competitive advantage.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16">
+                <div class="text-center">
+                    <div class="text-4xl font-bold text-primary mb-2">500+</div>
+                    <p class="text-gray-600 font-medium">Active Clients</p>
+                </div>
+                <div class="text-center">
+                    <div class="text-4xl font-bold text-primary mb-2">50K+</div>
+                    <p class="text-gray-600 font-medium">Workflows Automated</p>
+                </div>
+                <div class="text-center">
+                    <div class="text-4xl font-bold text-primary mb-2">99.9%</div>
+                    <p class="text-gray-600 font-medium">Uptime SLA</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="w-full py-20 md:py-32 bg-gray-50">
+        <div class="max-w-4xl mx-auto px-8 md:px-16">
+            <div class="text-center mb-16 md:mb-20">
+                <h2 class="text-4xl md:text-5xl font-bold text-dark mb-6 tracking-tight">
+                    Frequently Asked Questions
+                </h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto font-medium">
+                    Find answers to common questions about our automation platform
+                </p>
+            </div>
+
+            <div class="space-y-4">
+                <!-- FAQ Item 1 -->
+                <div class="faq-item bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
+                    <div class="faq-question p-8 cursor-pointer flex items-center justify-between hover:bg-gray-50 transition-colors duration-300">
+                        <h3 class="text-lg font-bold text-dark">How quickly can we implement automation in our organization?</h3>
+                        <svg class="faq-icon w-6 h-6 text-primary flex-shrink-0 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                        </svg>
+                    </div>
+                    <div class="faq-answer hidden px-8 pb-8 text-gray-700 font-medium leading-relaxed border-t">
+                        <p class="pt-4">
+                            Implementation timelines vary based on complexity, but most organizations see their first automated workflows operational within 2-4 weeks. Our rapid deployment methodology and dedicated implementation team ensure smooth onboarding. Simple processes can be automated in days, while more complex multi-step workflows typically take 3-6 weeks. We work closely with your team to prioritize high-impact processes first, ensuring quick wins that demonstrate value early in the engagement.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="faq-item bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
+                    <div class="faq-question p-8 cursor-pointer flex items-center justify-between hover:bg-gray-50 transition-colors duration-300">
+                        <h3 class="text-lg font-bold text-dark">What integrations does the platform support?</h3>
+                        <svg class="faq-icon w-6 h-6 text-primary flex-shrink-0 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                        </svg>
+                    </div>
+                    <div class="faq-answer hidden px-8 pb-8 text-gray-700 font-medium leading-relaxed border-t">
+                        <p class="pt-4">
+                            Our platform integrates with over 1,000 applications including Salesforce, Microsoft 365, SAP, Oracle, Slack, Zapier, and countless others. We continuously expand our integration library based on customer demand. Additionally, our open API and webhook support allow you to build custom integrations with virtually any system. Our integration specialists can also help you create custom connectors for proprietary or legacy systems, ensuring seamless connectivity across your entire technology stack.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="faq-item bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
+                    <div class="faq-question p-8 cursor-pointer flex items-center justify-between hover:bg-gray-50 transition-colors duration-300">
+                        <h3 class="text-lg font-bold text-dark">What security measures are in place to protect our data?</h3>
+                        <svg class="faq-icon w-6 h-6 text-primary flex-shrink-0 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                        </svg>
+                    </div>
+                    <div class="faq-answer hidden px-8 pb-8 text-gray-700 font-medium leading-relaxed border-t">
+                        <p class="pt-4">
+                            Security is our top priority. We implement bank-level encryption (AES-256) for all data in transit and at rest. Our platform is fully compliant with GDPR, HIPAA, SOC 2 Type II, and ISO 27001 standards. We maintain comprehensive audit logs, implement role-based access controls, and conduct regular security audits and penetration testing. Our infrastructure is hosted on AWS with 99.9% uptime guarantee, and we maintain regular backups with disaster recovery procedures. All customer data is isolated and encrypted, and we never access your data without explicit permission.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div class="faq-item bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
+                    <div class="faq-question p-8 cursor-pointer flex items-center justify-between hover:bg-gray-50 transition-colors duration-300">
+                        <h3 class="text-lg font-bold text-dark">What kind of ROI can we expect from implementing automation?</h3>
+                        <svg class="faq-icon w-6 h-6 text-primary flex-shrink-0 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                        </svg>
+                    </div>
+                    <div class="faq-answer hidden px-8 pb-8 text-gray-700 font-medium leading-relaxed border-t">
+                        <p class="pt-4">
+                            Most of our clients achieve positive ROI within 3-6 months. The typical ROI includes labor cost savings (30-60% reduction in manual work), error reduction (95% fewer mistakes), and efficiency gains (50%+ productivity increase). We've had clients report annual savings ranging from $50,000 for small businesses to $2+ million for large enterprises. The actual ROI depends on your specific use cases, process volumes, and labor costs. We provide a detailed ROI analysis during the sales process and track actual results throughout your engagement to demonstrate ongoing value.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 5 -->
+                <div class="faq-item bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
+                    <div class="faq-question p-8 cursor-pointer flex items-center justify-between hover:bg-gray-50 transition-colors duration-300">
+                        <h3 class="text-lg font-bold text-dark">Do we need technical expertise to use the platform?</h3>
+                        <svg class="faq-icon w-6 h-6 text-primary flex-shrink-0 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                        </svg>
+                    </div>
+                    <div class="faq-answer hidden px-8 pb-8 text-gray-700 font-medium leading-relaxed border-t">
+                        <p class="pt-4">
+                            No technical expertise is required! Our platform is designed with a user-friendly interface that allows business users to create and manage workflows through a visual drag-and-drop builder. However, we also provide advanced options for developers who want to build custom logic. We offer comprehensive training programs, detailed documentation, and 24/7 expert support to help your team succeed. Our onboarding specialists work directly with your team to ensure they're comfortable with the platform, and we're always available to answer questions or assist with complex implementations.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    
+    <!-- Contact Form Section - Centered Card Layout -->
+    <section id="contact" class="py-20 bg-gradient-to-b from-white to-gray-50">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Get in Touch</h2>
+          <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+            Have questions? We'd love to hear from you. Send us a message and we'll respond as soon as possible.
+          </p>
+        </div>
+
+        <div class="bg-white rounded-2xl shadow-xl p-8 md:p-12">
+          <form action="https://api.web3forms.com/submit" method="POST" class="space-y-6">
+            <input type="hidden" name="access_key" value="0b917c63-84c9-466a-b417-2cad89801d7f">
+            <input type="hidden" name="redirect" value="false">
+            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+            <div>
+              <label for="name" class="block text-sm font-semibold text-gray-700 mb-2">
+                Full Name <span class="text-red-500">*</span>
+              </label>
+              <input 
+                type="text" 
+                name="name" 
+                id="name" 
+                required 
+                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 outline-none"
+                placeholder="John Doe"
+              >
+            </div>
+
+            <div>
+              <label for="email" class="block text-sm font-semibold text-gray-700 mb-2">
+                Email Address <span class="text-red-500">*</span>
+              </label>
+              <input 
+                type="email" 
+                name="email" 
+                id="email" 
+                required 
+                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 outline-none"
+                placeholder="john@example.com"
+              >
+            </div>
+
+            <div>
+              <label for="phone" class="block text-sm font-semibold text-gray-700 mb-2">
+                Phone Number
+              </label>
+              <input 
+                type="tel" 
+                name="phone" 
+                id="phone" 
+                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 outline-none"
+                placeholder="+1 (555) 000-0000"
+              >
+            </div>
+
+            <div>
+              <label for="message" class="block text-sm font-semibold text-gray-700 mb-2">
+                Message <span class="text-red-500">*</span>
+              </label>
+              <textarea 
+                name="message" 
+                id="message" 
+                required 
+                rows="5" 
+                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 outline-none resize-none"
+                placeholder="Tell us about your project or inquiry..."
+              ></textarea>
+            </div>
+
+            <div class="pt-4">
+              <button 
+                type="submit" 
+                class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-4 px-8 rounded-lg transition-all duration-200 transform hover:scale-[1.02] active:scale-[0.98] shadow-lg hover:shadow-xl"
+              >
+                Send Message
+              </button>
+            </div>
+
+            <div id="form-result" class="hidden mt-4 p-4 rounded-lg text-center font-medium"></div>
+          </form>
+        </div>
+
+        <div class="mt-12 text-center">
+          <p class="text-gray-600">
+            Or email us directly at <a href="mailto:hello@example.com" class="text-blue-600 hover:text-blue-700 font-semibold">hello@example.com</a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      (function() {
+        const form = document.querySelector('form[action*="web3forms"]');
+        const resultDiv = document.getElementById('form-result');
+        
+        if (!form) return;
+        
+        form.addEventListener('submit', async function(e) {
+          e.preventDefault();
+          
+          const formData = new FormData(form);
+          const submitButton = form.querySelector('button[type="submit"]');
+          const originalButtonText = submitButton.textContent;
+          
+          submitButton.disabled = true;
+          submitButton.textContent = 'Sending...';
+          resultDiv.classList.add('hidden');
+          
+          try {
+            const response = await fetch('https://api.web3forms.com/submit', {
+              method: 'POST',
+              body: formData
+            });
+            
+            const data = await response.json();
+            
+            if (response.ok && data.success) {
+              resultDiv.className = 'block mt-4 p-4 rounded-lg text-center font-medium bg-green-50 text-green-800 border border-green-200';
+              resultDiv.textContent = 'Thank you! Your message has been sent successfully. We\'ll get back to you soon.';
+              form.reset();
+            } else {
+              resultDiv.className = 'block mt-4 p-4 rounded-lg text-center font-medium bg-red-50 text-red-800 border border-red-200';
+              resultDiv.textContent = data.message || 'Something went wrong. Please try again.';
+            }
+          } catch (error) {
+            resultDiv.className = 'block mt-4 p-4 rounded-lg text-center font-medium bg-red-50 text-red-800 border border-red-200';
+            resultDiv.textContent = 'Network error. Please check your connection and try again.';
+          } finally {
+            submitButton.disabled = false;
+            submitButton.textContent = originalButtonText;
+          }
+        });
+      })();
+    </script>
+  <footer class="w-full bg-dark text-white py-16 md:py-20">
+        <div class="max-w-7xl mx-auto px-8 md:px-16">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 md:gap-16 mb-12">
+                <!-- Brand Column -->
+                <div>
+                    <div class="flex items-center gap-3 mb-6">
+                        <div class="w-10 h-10 bg-primary rounded-full flex items-center justify-center">
+                            <i class="fas fa-bolt text-white text-lg"></i>
+                        </div>
+                        <span class="text-2xl font-bold">AAA</span>
+                    </div>
+                    <p class="text-gray-300 font-medium leading-relaxed">
+                        Transforming businesses through intelligent AI-powered automation solutions.
+                    </p>
+                    <div class="flex gap-4 mt-6">
+                        <a href="#" class="w-10 h-10 bg-primary/20 hover:bg-primary transition-colors duration-300 rounded-full flex items-center justify-center">
+                            <i class="fab fa-facebook-f text-white"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-primary/20 hover:bg-primary transition-colors duration-300 rounded-full flex items-center justify-center">
+                            <i class="fab fa-twitter text-white"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-primary/20 hover:bg-primary transition-colors duration-300 rounded-full flex items-center justify-center">
+                            <i class="fab fa-linkedin-in text-white"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-primary/20 hover:bg-primary transition-colors duration-300 rounded-full flex items-center justify-center">
+                            <i class="fab fa-instagram text-white"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Product Column -->
+                <div>
+                    <h4 class="text-lg font-bold mb-6">Product</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#features" class="text-gray-300 hover:text-primary transition-colors duration-300 font-medium">Features</a></li>
+                        <li><a href="#benefits" class="text-gray-300 hover:text-primary transition-colors duration-300 font-medium">Benefits</a></li>
+                        <li><a href="https://aaa.com" class="text-gray-300 hover:text-primary transition-colors duration-300 font-medium">Pricing</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-primary transition-colors duration-300 font-medium">Integrations</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-primary transition-colors duration-300 font-medium">Security</a></li>
+                    </ul>
+                </div>
+
+                <!-- Company Column -->
+                <div>
+                    <h4 class="text-lg font-bold mb-6">Company</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#about" class="text-gray-300 hover:text-primary transition-colors duration-300 font-medium">About Us</a></li>
+                        <li><a href="blog.html" class="text-gray-300 hover:text-primary transition-colors duration-300 font-medium">Blog</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-primary transition-colors duration-300 font-medium">Careers</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-primary transition-colors duration-300 font-medium">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Legal Column -->
+                <div>
+                    <h4 class="text-lg font-bold mb-6">Legal</h4>
+                    <ul class="space-y-3">
+                        <li><a href="privacy.html" class="text-gray-300 hover:text-primary transition-colors duration-300 font-medium">Privacy Policy</a></li>
+                        <li><a href="terms.html" class="text-gray-300 hover:text-primary transition-colors duration-300 font-medium">Terms of Service</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-primary transition-colors duration-300 font-medium">Cookie Policy</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-primary transition-colors duration-300 font-medium">Disclaimer</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="border-t border-gray-700 pt-12 mb-8">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div>
+                        <p class="text-gray-400 font-medium mb-2">Email</p>
+                        <a href="mailto:admin@aaa.com" class="text-white font-semibold hover:text-primary transition-colors duration-300">admin@aaa.com</a>
+                    </div>
+                    <div>
+                        <p class="text-gray-400 font-medium mb-2">Phone</p>
+                        <p class="text-white font-semibold">+1 (512) 555-0123</p>
+                    </div>
+                    <div>
+                        <p class="text-gray-400 font-medium mb-2">Location</p>
+                        <p class="text-white font-semibold">Austin, Texas, USA</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="border-t border-gray-700 pt-8 text-center">
+                <p class="text-gray-400 font-medium">
+                    &copy; 2025 Austin AI Automation Agency. All rights reserved. | Transforming Business Through Intelligent Automation
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Mobile Menu Toggle
+            const mobileMenuButton = document.querySelector('header nav .mobile-menu-button');
+            const mobileMenu = document.querySelector('header nav .mobile-menu');
+            
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                    const icon = mobileMenuButton.querySelector('i');
+                    if (icon) {
+                        icon.classList.toggle('fa-bars');
+                        icon.classList.toggle('fa-times');
+                    }
+                });
+
+                const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+                mobileMenuLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileMenu.classList.add('hidden');
+                        const icon = mobileMenuButton.querySelector('i');
+                        if (icon) {
+                            icon.classList.remove('fa-times');
+                            icon.classList.add('fa-bars');
+                        }
+                    });
+                });
+            }
+
+            // FAQ Accordion Toggle
+            const faqItems = document.querySelectorAll('.faq-item');
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                if (question) {
+                    question.addEventListener('click', () => {
+                        const answer = item.querySelector('.faq-answer');
+                        const isOpen = !answer.classList.contains('hidden');
+                        
+                        // Close all other FAQ items
+                        faqItems.forEach(otherItem => {
+                            if (otherItem !== item) {
+                                otherItem.querySelector('.faq-answer')?.classList.add('hidden');
+                                otherItem.querySelector('.faq-icon')?.classList.remove('rotate-180');
+                            }
+                        });
+                        
+                        // Toggle current item
+                        answer?.classList.toggle('hidden');
+                        item.querySelector('.faq-icon')?.classList.toggle('rotate-180');
+                    });
+                }
+            });
+
+            // Smooth Scroll for Anchor Links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    const href = this.getAttribute('href');
+                    if (href !== '#' && href.length > 1) {
+                        e.preventDefault();
+                        const target = document.querySelector(href);
+                        if (target) {
+                            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
